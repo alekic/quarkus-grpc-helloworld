@@ -49,3 +49,7 @@ If you want to learn more about building native executables, please consult http
 
 ## Related Guides
 
+You can consume the `Greeter` service with a tool like [grpcurl](https://github.com/fullstorydev/grpcurl):
+```shell script
+grpcurl --plaintext -d '{"name":"Quarkus"}' localhost:9000 helloworld.Greeter.SayHello
+```
